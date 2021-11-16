@@ -9,7 +9,7 @@ This sample project shows how to build multiple versions of your app from a sing
 Create a new project using this as repo as a template.
 
 ```bash
-slack create slackapi/future-environment-variables
+slack create -t slackapi/future-environment-variables
 ```
 
 ## Running it locally
