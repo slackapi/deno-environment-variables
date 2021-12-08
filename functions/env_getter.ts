@@ -5,7 +5,10 @@ export const EnvFunction = DefineFunction(
   {
     title: "Environment Variable Tester",
     description: "Prints out environment variables",
-    input_parameters: {},
+    input_parameters: {
+      required: [],
+      properties: {},
+    },
     output_parameters: {
       required: ["api_key"],
       properties: {
