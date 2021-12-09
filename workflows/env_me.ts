@@ -3,9 +3,12 @@ import { EnvFunction } from "../functions/env_getter.ts";
 
 export const EnvMeWorkflow = DefineWorkflow("env_me", {
   input_parameters: {
-    channel: {
-      type: Schema.slack.types.channel_id,
-      description: "Channel where the shortcut is triggered.",
+    required: ["channel"],
+    properties: {
+      channel: {
+        type: Schema.slack.types.channel_id,
+        description: "Channel where the shortcut is triggered.",
+      },
     },
   },
   title: "Env me!",
